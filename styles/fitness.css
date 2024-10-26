@@ -30,6 +30,113 @@
 #humburger{
     display: none;
 }
+/* hero section styles */
+.hero{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient
+    (180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    margin-left: 8rem;
+    margin-right: 3rem;
+    
+}
+#hero-h1{
+color: rgb(255, 255, 255);
+font-size: 6rem;
+font-weight: 900;
+
+}
+#join-club{
+    border-radius: 5rem;
+    color: white;
+    background: rgb(230, 83, 60);
+    border: none;
+    padding: 0.5rem;
+}
+#download-app{
+box-sizing: border-box;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5rem;
+color: white;
+padding: 0.5rem;
+}
+.hero-img-badge1{
+border-radius: 12px;
+width: 120px;
+bottom: 15rem;
+left: 2rem;
+padding: 20px;
+background: rgba(48, 48, 48, 0.54);
+text-align: center;
+position: relative;
+}
+.hero-img-badge1 h1{
+   margin: 0;
+   background: none;
+}
+.hero-img-badge1 p{
+    margin: 0;
+    background: none ;
+}
+.hero-img-badge2{
+width: 146px;
+bottom: 35rem;
+left: 13rem;
+padding: 1px;
+border-radius: 10px;
+background: rgba(48, 48, 48, 0.54);
+text-align: center;
+position: relative;  
+}
+.hero-img-badge2 h1{
+margin: 0;
+background: none;
+}
+.hero-img-badge2 p{
+    margin: 0;
+    background: none;
+    }
+    /* change your habit section style */
+    .habits{
+        max-width: 1044px;
+    }
+    .habits-sec-text{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .habits-sec-text h1{
+        font-weight: 900;
+        font-size: 48px;
+    }
+    .movement-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .time-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .practice-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .weight-loss-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .habits-sec-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 6rem;
+    }
+
 /* responsive layout for 576px*/
 @media screen and (max-width: 576px){
     .nav-anchor{
@@ -43,13 +150,35 @@
         margin-left: 2rem;
         gap: 17rem;
     }
+    .hero{
+        display:grid ;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 1rem;
+    }
+    #hero-h1{
+        font-size: 4rem;
+    }
+    .habits-sec-content{
+        flex-direction: column;
+        margin-left: 0.5rem;
+    }
 }
 /* responsive layout for 573px */
 @media screen and (min-width:573px) {
     
     .nav-parents-div{
-        margin-left: 1rem;
+        margin-left: 5rem;
         margin-right: 1rem;
+    }
+    .hero{
+        display:grid ;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 5rem;
+    }
+    .habits-sec-content{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-left: 1rem;
     }
 }
 /* responsive layout for 992px */
@@ -58,5 +187,13 @@
     .nav-parents-div{
         margin-left: 5rem;
         margin-right: 5rem;
+    }
+    .hero{
+        display:grid ;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5rem;
+    }
+    .habits-sec-content{
+        display: flex;
     }
 }
