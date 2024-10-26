@@ -2,11 +2,14 @@
 
 *{
     font-family: "Inter", sans-serif;
-    background-color: rgb(0, 0, 0);;
+    background-color: rgb(34, 34, 34);
+   
 }
-
+.header{
+    max-width: 1440px;
+    background-color: rgb(34, 34, 34);
+}
 .nav-parents-div{
-    max-width: 1060px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +19,7 @@
 .nav-anchor, a{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px;
     border-radius: 39px;
     display: flex;
     gap: 3rem;
@@ -32,14 +36,9 @@
 }
 /* hero section styles */
 .hero{
-    max-width: 1440px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient
-    (180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    text-align: center;
     margin-left: 8rem;
-    margin-right: 3rem;
     
 }
 #hero-h1{
@@ -48,25 +47,27 @@ font-size: 6rem;
 font-weight: 900;
 
 }
-#join-club{
+.join-club{
     border-radius: 5rem;
     color: white;
     background: rgb(230, 83, 60);
     border: none;
-    padding: 0.5rem;
+    padding: 16px 40px 16px 40px;
 }
 #download-app{
 box-sizing: border-box;
 border: 1px solid rgb(255, 255, 255);
 border-radius: 5rem;
+background: black;
 color: white;
-padding: 0.5rem;
+padding: 16px 40px 16px 40px;
+margin-left: 2rem;
 }
 .hero-img-badge1{
 border-radius: 12px;
 width: 120px;
 bottom: 15rem;
-left: 2rem;
+left: 7rem;
 padding: 20px;
 background: rgba(48, 48, 48, 0.54);
 text-align: center;
@@ -82,8 +83,8 @@ position: relative;
 }
 .hero-img-badge2{
 width: 146px;
-bottom: 35rem;
-left: 13rem;
+bottom: 33rem;
+left: 24rem;
 padding: 1px;
 border-radius: 10px;
 background: rgba(48, 48, 48, 0.54);
@@ -98,9 +99,15 @@ background: none;
     margin: 0;
     background: none;
     }
+    
     /* change your habit section style */
     .habits{
         max-width: 1044px;
+        background-color: rgb(34, 34, 34);
+        border: none; 
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 158px;
     }
     .habits-sec-text{
         text-align: center;
@@ -136,9 +143,66 @@ background: none;
         align-items: center;
         margin-left: 6rem;
     }
+    /* run-an-extra-mile section styles */
+    .run-an-extra-mile{
+        max-width: 1440px;
+        margin-top: 5rem;
+        border-radius: 18px;
+        background: rgba(111, 10, 10, 0.781);
+    }
+    .run-img{
+     width: 366px;
+     height: 312px;
+     margin-left: 3rem;
+     top: 30px;
+     border-radius: 5%;
+    }
+    .run-an-extra-mile-parents-div{
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+     gap: 10px;
+     
+    }
+
+    /* bmi */
+ .BMI{
+    max-width: 1440px;
+ }
+
+    table {
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+    
+    table, th, td {
+         border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    thead {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+   .container{
+    display: flex;
+    justify-content: space-around;
+   }
+ 
 
 /* responsive layout for 576px*/
 @media screen and (max-width: 576px){
+    .header{
+        max-width: 100%;
+    }
     .nav-anchor{
         display: none;
     }
@@ -162,9 +226,21 @@ background: none;
         flex-direction: column;
         margin-left: 0.5rem;
     }
+    .run-an-extra-mile-parents-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .run-an-extra-mile-container-div{
+        margin-left: 3rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 /* responsive layout for 573px */
-@media screen and (min-width:573px) {
+@media screen and (min-width:576px) {
     
     .nav-parents-div{
         margin-left: 5rem;
@@ -182,7 +258,7 @@ background: none;
     }
 }
 /* responsive layout for 992px */
-@media screen and (min-width:992px) {
+@media screen and (min-width:900px) {
     
     .nav-parents-div{
         margin-left: 5rem;
@@ -192,6 +268,9 @@ background: none;
         display:grid ;
         grid-template-columns: repeat(2, 1fr);
         margin-left: 5rem;
+    }
+    
+       
     }
     .habits-sec-content{
         display: flex;

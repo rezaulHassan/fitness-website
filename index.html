@@ -8,17 +8,17 @@
 </head>
 <body>
  
-    <header>
+    <header class="header">
         <nav>
             <div class="nav-parents-div">
                 <div class="nav-heading">
                     <h1 style="color: red; ;"><i>Fitness</i></h1>
                 </div>
                 <div class="nav-anchor">
-                    <a id="home"href="">Home</a>
-                    <a href="">Service</a>
-                    <a href="">Contact</a>
-                    <a href="">About</a>
+                    <a id="home"href="" style="border: none; padding: 8px 20px 8px 20px;">Home</a>
+                    <a href="" style="border: none;">Service</a>
+                    <a href="" style="border: none;">Contact</a>
+                    <a href="" style="border: none;">About</a>
                 </div>
                 <div id="humburger"><a ><img src="images/menu.png" width="20px" alt=""></a></div>
             </div>
@@ -29,7 +29,7 @@
 <h1 id="hero-h1" >Get body in <i>shape</i> & stay healthy</h1>
 <p style="color: aliceblue;">A huge selection of health and <br>
      fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-<button id="join-club">Join Club Now!</button>
+<button class="join-club">Join Club Now!</button>
 <button id="download-app">Download App</button>
     </div>
     <div class="hero-img">
@@ -78,6 +78,84 @@
                 </div>
             </div>
         </section>
+        <!-- section Run an Extra 
+Mile Easily -->
+<section class="run-an-extra-mile">
+    <div class="run-an-extra-mile-parents-div">
+<div style="margin-top: 5rem; color: white; border: none;" class="run-an-extra-mile-container-div">
+<h2 >Run an Extra 
+    Mile Easily</h2>
+    <p >
+        With daily practice  you will be able to run an extra mile easily
+    </p>
+    <button style="border-radius: 20px ; color: white;
+
+    background:rgb(230, 83, 60); padding: 16px 48px 16px 40px; border: none;">Join Now</button>
+</div>
+<div class="run-an-extra-mile-img-div">
+    <img src="images/run.jpg" alt="" class="run-img">
+</div>
+    </div>
+</section>
+
+<!-- bmi -->
+ <div class="BMI-text" style="color: white; text-align: center;">
+    <h1>BMI Calculator</h1>
+    <p>With the help of BMI calculator  you can 
+        calculate your weight status
+    </p>
+ </div>
+ <section style="color: white;" class="BMI">
+    <div class="container">
+       <div class="bmi-table">
+        <h2>BMI Calculator chart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>BMI </th>
+                    <th>Weight Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Below 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Healthy </td>
+                </tr>
+                <tr>
+                    <td>25.0 - 29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>30.0 and above</td>
+                    <td>Obesity</td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+       <div class="bmi-text-field">
+        <div>
+            <h2>
+                Calculate Your BMI
+            </h2>
+            <p>We believe fitness should be <br> accessible to everyone, everywhere, <br> regardless of income or access to a gym. 
+
+            </p>
+        </div>
+        <div>
+            <input type="number" style="border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 12px 40px 12px 20px;" id="height" placeholder="Height/cm" required>
+            <input type="number" style="border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 12px 40px 12px 20px;" id="weight" placeholder="Weight/kg" required> <br>
+            <input type="number" style="border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 12px 40px 12px 20px;" id="weight" placeholder="Age" required>
+            <input type="number" style="border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 12px 40px 12px 20px;" id="weight" placeholder="Sex" required> <br>
+            <input type="number" style="border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 12px 160px 12px 160px;" id="weight" placeholder="Select an activity factor" required> <br>
+            <button class="join-club" style="padding: 16px 48px 16px 48px;">Calculate</button>
+        </div>
+       </div>
+    </div>
+ </section>
     </main>
     <footer></footer>
 </body>
