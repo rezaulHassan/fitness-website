@@ -196,7 +196,15 @@ background: none;
     display: flex;
     justify-content: space-around;
    }
- 
+  .meat-our-team-img{
+display: grid;
+grid-template-columns: repeat(3, 2fr);
+padding: 200px;
+gap: 20;
+justify-content: center;
+align-items: center;
+border-radius: 18px;
+   }
 
 /* responsive layout for 576px*/
 @media screen and (max-width: 576px){
@@ -238,6 +246,7 @@ background: none;
         flex-direction: column;
         gap: 2rem;
     }
+   
 }
 /* responsive layout for 573px */
 @media screen and (min-width:576px) {
